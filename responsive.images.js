@@ -24,7 +24,6 @@
         pickImage(elem);
         if(onResize) {
             addEvent(window, "resize", function() {
-                document.getElementById("bodyWidth").innerHTML = "Width: " + window.innerWidth; 
                 pickImage(elem);
             });
         }
