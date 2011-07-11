@@ -7,7 +7,7 @@ Allows you to load in a different image based on the browser view port. If someo
 ##How to use it
 It's pretty easy to use on your page. If you download this repository, there's a fully working demo in demo.html.  After you've included the script in your page, you need to pass in a couple of things when you call the function:
 
-    responsiveImage("img, {
+    responsiveImage("img", {
         "320" : "iPhone.jpg",
         "768" : "iPad.jpg",
         "1024" : "Average.jpg",
@@ -18,3 +18,6 @@ The first thing you pass in is an id, which should be an id of the image you wis
 
 ##Suggestions?
 Feel free to work this, report issues, shout at me for breaking things, etc. Or you can grab me on Twitter as @Jack_Franklin.
+
+##Changelog
+1. 11/07: Initial Version Released
