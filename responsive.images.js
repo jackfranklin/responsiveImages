@@ -8,6 +8,7 @@
         for(var key in options) {
             if(key == "else") {
                 elem.src = options["else"];
+                break;
             } else {
                 var width = parseInt(key);
                 var windowWidth = window.innerWidth;
