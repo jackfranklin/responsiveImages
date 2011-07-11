@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Demo</title>
+        <script src="responsive.images.js"></script>
+        <script>
+            window.onload = function() {
+                console.log("Window height", window.innerWidth);
+                responsiveImage("img", {
+                    "320" : "img1.jpg",
+                    "640" : "img2.jpg",
+                    "else": "img3.jpg"
+                });
+            };
+        </script>
+    </head>
+    <body>
+        <img id="img">
+    </body>
+
+</html>
