@@ -20,4 +20,4 @@ The first thing you pass in is an id, which should be an id of the image you wis
 Feel free to work this, report issues, shout at me for breaking things, etc. Or you can grab me on Twitter as @Jack_Franklin.
 
 ##Live Demo
-(There is a live demo here.)[http://jackfranklin.org/responsive-images]
+[There is a live demo here.](http://jackfranklin.org/responsive-images)
