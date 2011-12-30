@@ -25,7 +25,7 @@
         if(onResize) {
             addEvent(window, "resize", function() {
                 pickImage(elem);
-            });
+            };
         }
     };
     window.responsiveImage = responsiveImages;

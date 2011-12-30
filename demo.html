@@ -7,8 +7,10 @@
                 position: absolute; background: rgba(0,0,0, 0.5); font-size: 24px;
                 top: 0; left: 0;
             }
+
         </style>
-        <script src="responsive.images.js"></script>
+        <script src="responsiveimages.js"></script>
+		
         <script>
             window.onload = function() {
                 responsiveImage("img", {
@@ -19,12 +21,18 @@
                     "1000" : "http://placekitten.com/1000/1000",
                     "else" : "http://placekitten.com/1200/1200"
                 }, true);
+                document.getElementById("bodyWidth").innerHTML = window.innerWidth + "px";
             };
+            window.onresize = function() {
+
+                document.getElementById("bodyWidth").innerHTML = window.innerWidth + "px";
+            };
+
         </script>
     </head>
     <body>
-        <p id="bodyWidth"></p>
         <img id="img">
+        <p id="bodyWidth"><p>
     </body>
 
 </html>
