@@ -1,10 +1,18 @@
+
+/*
+Written by Jack Franklin (jackfranklin.co.uk)
+Repository at: https://github.com/jackfranklin/responsiveImages
+Released under the MIT License: http://en.wikipedia.org/wiki/MIT_License
+Copyright (C) 2012 Jack Franklin
+Accompanying Blog Post: http://jackfranklin.co.uk/responsive-images
+*/
+
+/*
+Quick polyfill for adding an event
+*/
+
 (function() {
-
-  /*
-  # Written by Jack Franklin for the 12 Devs of Xmas article
-  */
-
-  var addEvent, responsiveImage;
+  var addEvent, responsiveImages;
 
   addEvent = function(elem, type, eventHandle) {
     if (!(elem != null)) return;
@@ -15,7 +23,11 @@
     }
   };
 
-  responsiveImage = function(elem, options, onResize) {
+  /*
+  Main function. Loops through the options object and decides which image to use.
+  */
+
+  responsiveImages = function(elem, options, onResize) {
     var pickImage;
     if (onResize == null) onResize = "false";
     elem = document.getElementById(elem);
@@ -47,6 +59,6 @@
     }
   };
 
-  window.responsiveImage = responsiveImage;
+  window.responsiveImage = responsiveImages;
 
 }).call(this);

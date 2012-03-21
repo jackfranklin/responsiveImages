@@ -21,3 +21,11 @@ Feel free to work this, report issues, shout at me for breaking things, etc. Or 
 
 ##Live Demo
 [There is a live demo here.](http://jackfranklin.org/responsive-images)
+
+##Blog Post
+[I blogged about it](http://jackfranklin.co.uk/responsive-images)
+
+##Written in CoffeeScript
+If you want to fork & improve, remember you need to edit the
+CoffeeScript version. I only improve the .js version in this repository
+so it's easier to implement the script, no compiling needed.

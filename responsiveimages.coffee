@@ -1,7 +1,14 @@
 ###
-# Written by Jack Franklin for the 12 Devs of Xmas article
+Written by Jack Franklin (jackfranklin.co.uk)
+Repository at: https://github.com/jackfranklin/responsiveImages
+Released under the MIT License: http://en.wikipedia.org/wiki/MIT_License
+Copyright (C) 2012 Jack Franklin
+Accompanying Blog Post: http://jackfranklin.co.uk/responsive-images
 ###
 
+###
+Quick polyfill for adding an event
+###
 addEvent = (elem, type, eventHandle) ->
   return if not elem?
   if elem.addEventListener
@@ -9,12 +16,11 @@ addEvent = (elem, type, eventHandle) ->
   else if elem.attachEvent
     elem.attachEvent "on#{type}", eventHandle
 
-
-
-
+###
+Main function. Loops through the options object and decides which image to use.
+###
 responsiveImages = (elem, options, onResize = "false") ->
   elem = document.getElementById elem
-
   pickImage = (elem) ->
     for key of options
       if key is "else"
@@ -32,4 +38,5 @@ responsiveImages = (elem, options, onResize = "false") ->
     addEvent window, "resize", ->
       pickImage elem
 
+#expose globally
 window.responsiveImage = responsiveImages
