@@ -40,3 +40,7 @@ responsiveImages = (elem, options, onResize = "false") ->
 
 #expose globally
 window.responsiveImage = responsiveImages
+
+# support AMD
+if typeof define === "function" && define.amd && define.amd.jQuery
+    define( "responsiveImages", [], function () { return responsiveImages; } );
