@@ -1,6 +1,6 @@
 {
   "name": "responsiveImages",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A quick script to provide a way of changing which image to use based on window dimensions.",
   "main": "responsiveimages.js"
   "repositories": [
