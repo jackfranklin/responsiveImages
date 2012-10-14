@@ -42,5 +42,5 @@ responsiveImages = (elem, options, onResize = "false") ->
 window.responsiveImage = responsiveImages
 
 # support AMD
-if typeof define === "function" && define.amd && define.amd.jQuery
-    define( "responsiveImages", [], function () { return responsiveImages; } );
+if typeof window.define is "function" && window.define.amd
+    window.define( "responsiveImages", [], -> window.responsiveImage  )
